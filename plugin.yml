@@ -1,0 +1,7 @@
+name: MassiveRP
+version: 0.0.1
+main: net.graystone.java.rp.MassiveRP
+author: [Flooshera]
+website: https://gray-stone.net
+depend: [MassiveCore]
+description: MassiveRP is a customizable roleplay utility made for the roleplay server, GrayStone, by one of its developers, Flooshera!
