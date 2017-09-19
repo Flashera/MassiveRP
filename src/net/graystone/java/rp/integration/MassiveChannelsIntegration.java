@@ -1,6 +1,5 @@
 package net.graystone.java.rp.integration;
 
-import net.graystone.java.channels.MassiveChannels;
 import net.graystone.java.channels.entity.MPlayer;
 
 public class MassiveChannelsIntegration {
@@ -9,7 +8,6 @@ public class MassiveChannelsIntegration {
 	public static MassiveChannelsIntegration get() { return MassiveChannelsIntegration.i; }
 
 	public static String getNick(MPlayer player) {
-		MPlayer player1 = new MPlayer();
 		String nick = MPlayer.get(player).getNick();
 		return nick;
 	}

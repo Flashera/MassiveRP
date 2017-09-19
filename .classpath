@@ -2,9 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/Users/Owner/Videos/MassiveCore.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Owner/Videos/minecraft_server.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Owner/Videos/MassiveChannels.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Owner/Desktop/Test Server/plugins/PermissionsEx-1.23.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nathan/Desktop/Test Server/plugins/MassiveCore.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nathan/Desktop/Test Server/minecraft_server.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nathan/Desktop/Test Server/MassiveChannels.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nathan/Desktop/Test Server/PermissionsEx-1.23.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

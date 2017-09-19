@@ -1,13 +1,9 @@
 package net.graystone.java.rp.engine;
 
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
-import org.bukkit.inventory.MainHand;
-
 import com.massivecraft.massivecore.Engine;
 
 import net.graystone.java.rp.entity.MPlayer;

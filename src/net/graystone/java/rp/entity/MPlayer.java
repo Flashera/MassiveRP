@@ -1,9 +1,5 @@
 package net.graystone.java.rp.entity;
 
-import org.bukkit.Location;
-import org.bukkit.World;
-import org.bukkit.entity.Player;
-
 import com.massivecraft.massivecore.store.SenderEntity;
 
 import net.graystone.java.rp.entity.MPlayer;

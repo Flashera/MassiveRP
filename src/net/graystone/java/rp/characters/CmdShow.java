@@ -1,23 +1,13 @@
 package net.graystone.java.rp.characters;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.bukkit.entity.Player;
 
 import com.massivecraft.massivecore.MassiveException;
-import com.massivecraft.massivecore.collections.MassiveList;
-import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
-import com.massivecraft.massivecore.command.type.primitive.TypeString;
 import com.massivecraft.massivecore.command.type.sender.TypePlayer;
-import com.massivecraft.massivecore.util.Txt;
-
 import net.graystone.java.rp.Perm;
 import net.graystone.java.rp.command.RPCommand;
 import net.graystone.java.rp.engine.CardInteractEngine;
-import net.graystone.java.rp.entity.MConf;
-import net.graystone.java.rp.entity.MConfColl;
 import net.graystone.java.rp.entity.MPlayer;
 
 public class CmdShow extends RPCommand

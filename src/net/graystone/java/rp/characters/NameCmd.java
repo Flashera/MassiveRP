@@ -1,23 +1,14 @@
 package net.graystone.java.rp.characters;
 
-import java.util.Arrays;
-import java.util.List;
+import org.bukkit.entity.Player;
 
 import com.massivecraft.massivecore.MassiveException;
-import com.massivecraft.massivecore.collections.MassiveList;
-import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.command.type.primitive.TypeString;
-import com.massivecraft.massivecore.util.Txt;
-
-import net.graystone.java.channels.MassiveChannels;
-import net.graystone.java.channels.entity.MPlayer;
-import net.graystone.java.channels.integration.PEXIntegration;
 import net.graystone.java.rp.MassiveRP;
 import net.graystone.java.rp.Perm;
 import net.graystone.java.rp.command.RPCommand;
 import net.graystone.java.rp.entity.MConf;
-import net.graystone.java.rp.entity.MConfColl;
 import net.graystone.java.rp.integration.MassiveChannelsIntegration;
 
 public class NameCmd extends RPCommand
@@ -38,6 +29,7 @@ public class NameCmd extends RPCommand
 	{
 		String name = this.readArg();
 		String nick = "";
+		Player rawPlayer = (Player) sender;
 		
 		int charUsing = player.getCharUsing();
 		
@@ -54,7 +46,9 @@ public class NameCmd extends RPCommand
 			
 			MassiveChannelsIntegration.setNick(nick, player1);
 		}
-			
+		
+		if (MConf.isDisplayNamesEnabled()) rawPlayer.setDisplayName(name);
+		
 		msg("<i>Your character's name has been <pink>updated <i>to: <pink>"+name+"<i>.");
 	}
 	

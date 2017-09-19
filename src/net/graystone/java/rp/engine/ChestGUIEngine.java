@@ -4,24 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.Bukkit;
-import org.bukkit.DyeColor;
 import org.bukkit.Material;
-import org.bukkit.Sound;
-import org.bukkit.craftbukkit.Main;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.material.Wool;
-
 import com.massivecraft.massivecore.Engine;
 import com.massivecraft.massivecore.chestgui.ChestActionCommand;
 import com.massivecraft.massivecore.chestgui.ChestGui;
 import com.massivecraft.massivecore.util.Txt;
 
 import net.graystone.java.rp.entity.MPlayer;
-import net.md_5.bungee.api.ChatColor;
 
 public class ChestGUIEngine extends Engine{
 	
@@ -38,9 +32,6 @@ public class ChestGUIEngine extends Engine{
 	    ChestActionCommand cmd = new ChestActionCommand();
 	    ChestActionCommand cmd2 = new ChestActionCommand();
 	    ChestActionCommand cmd3 = new ChestActionCommand();
-	    ChestActionCommand cmd4 = new ChestActionCommand();
-	    ChestActionCommand cmd5 = new ChestActionCommand();
-	    ChestActionCommand cmd6 = new ChestActionCommand();
 	    cmd.setCommand("/char use 1");
 	    gui.setAction(6, cmd);
 	    

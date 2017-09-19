@@ -1,25 +1,14 @@
 package net.graystone.java.rp.characters;
 
-import java.util.Arrays;
-import java.util.List;
-
-import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import com.massivecraft.massivecore.MassiveException;
-import com.massivecraft.massivecore.collections.MassiveList;
-import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.command.type.primitive.TypeInteger;
-import com.massivecraft.massivecore.command.type.primitive.TypeString;
-import com.massivecraft.massivecore.util.Txt;
-
 import net.graystone.java.rp.MassiveRP;
 import net.graystone.java.rp.Perm;
 import net.graystone.java.rp.command.RPCommand;
 import net.graystone.java.rp.entity.MConf;
-import net.graystone.java.rp.entity.MConfColl;
 import net.graystone.java.rp.integration.MassiveChannelsIntegration;
 
 public class UseCmd extends RPCommand
@@ -38,10 +27,9 @@ public class UseCmd extends RPCommand
 	@Override
 	public void perform() throws MassiveException
 	{
-		int charUsing = player.getCharUsing();
 		int usedChar = this.readArg();
-		Player rawPlayer = (Player) sender;
 		String nick = "";
+		Player rawPlayer = (Player) sender;
 		/*
 		World world = rawPlayer.getLocation().getWorld();
 		double x = rawPlayer.getLocation().getX();
@@ -60,6 +48,7 @@ public class UseCmd extends RPCommand
 		if (usedChar != 1 && usedChar != 2 && usedChar != 3) { msg("<red>Error: <rose>You must use either 1, 2, or 3<rose>."); return; }
 		
 		player.setCharUsing(usedChar);
+		
 		/*
 		if (charUsing == 1) {
 			player.setCharWorld(world);
@@ -129,6 +118,14 @@ public class UseCmd extends RPCommand
 			if (usedChar == 3) nick = player.getChar3Name();
 
 			MassiveChannelsIntegration.setNick(nick, player1);
+		}
+		
+		if (MConf.isDisplayNamesEnabled()) {
+			if (usedChar == 1) nick = player.getCharName();
+			if (usedChar == 2) nick = player.getChar2Name();
+			if (usedChar == 3) nick = player.getChar3Name();
+			
+			rawPlayer.setDisplayName(nick);
 		}
 		
 		msg("<i>You are now <pink>using <i>character <pink>"+usedChar+"<i>.");

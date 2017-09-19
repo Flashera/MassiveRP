@@ -1,27 +1,16 @@
 package net.graystone.java.rp.command;
 
 import java.util.List;
-import java.util.Random;
-
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 import com.massivecraft.massivecore.MassiveException;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.command.type.sender.TypePlayer;
-import com.massivecraft.massivecore.command.type.primitive.TypeInteger;
 import com.massivecraft.massivecore.util.MUtil;
-import com.massivecraft.massivecore.util.Txt;
-
-import net.graystone.java.channels.entity.MConf;
 import net.graystone.java.rp.MassiveRP;
 import net.graystone.java.rp.Perm;
-import net.graystone.java.rp.entity.MPlayer;
-import net.graystone.java.rp.integration.MassiveChannelsIntegration;
 import net.graystone.java.rp.integration.PEXIntegration;
 import ru.tehkode.permissions.PermissionUser;
-import net.graystone.java.rp.entity.MConfColl;
 
 public class CmdGraylist extends RPCommand
 {

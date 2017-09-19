@@ -1,9 +1,6 @@
 package net.graystone.java.rp.entity;
 
-import java.util.List;
-
 import com.massivecraft.massivecore.MassiveCore;
-import com.massivecraft.massivecore.collections.MassiveList;
 import com.massivecraft.massivecore.store.Coll;
 import com.massivecraft.massivecore.store.MStore;
 
